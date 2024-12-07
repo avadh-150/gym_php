@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body {
+    min-height: 100vh;
+}
+
+.box {
+    width: 100%;
+    height: 330px;
+    padding-top: 60px;
+    background-image: url("gym/search-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box h2 {
+    margin-left: 540px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.box input {
+    font-size: 25px;
+    border-radius: 5px;
+    width: 600px;
+    height: 50px;
+    margin-left: 390px;
+    margin-top: 50px;
+}
+
+#srh::placeholder {
+    padding: 10px;
+}
+
+#srh:hover {
+    cursor: text;
+}
+
+.imag {
+    height: 250px;
+    width: 250px;
+    padding: 4px;
+    background: #17af68;
+    border-radius: 28%;
+}
+
+.imag img {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 28%;
+}
+
+.container {
+    display:inline-block;
+    gap:7px;
+     margin-left: 60px;
+    max-width: 60vh;
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    animation: img 5s ease-in-out 0s infinite alternate;
+     transition: all 5s cubic-bezier(0.1, 0.6, 1, 1);
+}
+.container .cad {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px  rgba(14, 173, 181, 0.5);
+    padding: 10px;
+    border-radius: 7px;
+    background: #000;
+}
+
+.cad h2 {
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cad {
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(47, 106, 79);
+    text-align: center;
+}
+
+.cad p {
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.icons {
+    margin-top: 20px;
+color: #07f0ba;
+}
+/* Photo Gallety............................... */
+.textline {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #000;
+    /* border: 1px solid red; */
+    /* margin: 20px; */
+    
+}
+
+.photo {
+    width: 400px;
+    display:grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 50px;
+    float: left;
+    
+}
+
+.con {
+    /* border: 1px solid red; */
+    gap: 5px;
+    position: relative;
+    max-width: 95%;
+    margin-top: -200px;
+    /* columns: 5 340px; */
+    list-style: none;
+}
+
+.con img {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    transition: all 2s;
+}
+/* .photo .con img:hover {
+    width: 300px;
+} */
+.btn-tra {
+    margin-left: 50px;
+    color: #e0dddd;
+
+}
+
+.btn-tra button {
+    width: 70px;
+    background: rgba(183, 179, 179, 0.2);
+    border-radius: 1rem;
+    height: 40px;
+}
+
+.btn-tra button a {
+    color: #ededed;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px) {
+    .header {
+        width: 70px;
+    }
+}
+
+.bet-about{
+    width: 100%;
+    height: 400px;
+    color:#13876c;
+    background: linear-gradient(0deg,#0c0c0c08, #474aff37, #bc48ff38);
+}
+.caption h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 220px;
+    font-size: 80px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    letter-spacing: 3px;
+    font-weight:100;
+    color:transparent;
+    -webkit-text-stroke: 1px;
+    color: rgba(10, 10, 10, 0.6);
+    -webkit-text-stroke-color: #07f0ba;
+    
+}
+.caption
+{
+    width: 100%;
+    height: 400px;
+    color:#13876c;
+    background: linear-gradient(0deg,#0c0c0c08, #474aff37, #bc48ff38);
+
+}
+.caption p
+{
+    font-size: 20px;
+    text-align: center;
+    color: #07f0ba56;
+}
+/* Login code css */
+#login-right {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: calc(100%);
+    display: flex;
+    align-items: center;
+    background: url('gym/walking.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login-left {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: calc(100%);
+    /* background: #59b6ec61; */
+    display: flex;
+    align-items: center;
+    background-image: url('gym/t-1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#login-right .card {
+    margin: auto;
+    z-index: 1;
+    background: rgba(255,255,255,0.35);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+border: 1px solid rgba(255,255,255,0.175);
+    border-radius: 10px;
+    box-shadow: 0 0 45px 5px #fff;
+}
+
+.logo {
+    margin: auto;
+    font-size: 8rem;
+    background: white;
+    padding: .5em 0.7em;
+    border-radius: 50% 50%;
+    color: #000000b3;
+    z-index: 10;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}

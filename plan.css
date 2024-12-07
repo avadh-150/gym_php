@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    /* color: #333; */
+    line-height: 1.6;
+}
+
+/* Container styling */
+.containers_main {
+ 
+    max-width: 1200px;
+    /* border:1px solid red; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section title styling */
+.section-title {
+ 
+    margin-bottom: 50px;
+}
+.row_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border:1px solid red; */
+}
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border:1px solid red; */
+    /* width: 700px; */
+}
+
+/* Blog post card styling */
+.blog-post {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 360px;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.pi-top h4 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.pi-price h3 {
+    font-weight: bolder;
+    font-size: 28px;
+    color: #ee6d5f;
+    margin-bottom: 10px;
+}
+
+.pi-price p {
+    font-size: 16px;
+    color: #949898;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #c52b9c;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.site-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #e74c3c, #ff7675);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.site-btn:hover {
+    background: linear-gradient(45deg, #ff7675, #e74c3c);
+}
+
+.sb-line-gradient {
+    background: none;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sb-line-gradient:hover {
+    background: #e74c3c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+}

@@ -1,0 +1,41 @@
+ <div class="dbtable">
+        <h1 align="center"> Database Table File</h1>
+    </div>
+    <table class="table " border="10px">
+        <thead class="table-head">
+            <tr>
+                <th>Full Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Join Date</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <?php  
+                $conn=mysqli_connect("localhost","root","","demo") or die("connection is failed....");
+    
+                $sql = "select * from tblgym";
+                $result=mysqli_query($conn,$sql) or die("some query issues....");
+                while($row= mysqli_fetch_assoc($result))
+                {
+                ?>
+                <td><?php echo $row['fname']?></td>
+                <td><?php echo $row['username']?></td>
+                <td><?php echo $row['email']?></td>
+                <td><?php echo $row['pass']?></td>
+                <td><?php echo $row['phone']?></td>
+                <td><?php echo $row['gender']?></td>
+                <td><?php echo $row['jdate']?></td>
+                <td><a href="registration.php"><button class="btn">insert</button></a>
+                    <a href="updateweb.php?name=<?php echo $row['fname'];?>"><button class="btn">Edit</button></a>
+                <a href="delete.php?name=<?php echo $row['fname'];?>"><button class="btn">delete</button></a></td>
+            </tr>
+            <?php }?>
+        </tbody>
+    </table>

@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 500px;
+    background: #000;
+    box-shadow: 0 0 20px 0.4px #fff;
+    animation: img 5s ease-in-out 0s infinite alternate;
+    transition: all 5s cubic-bezier(0.1, 0.6, 1, 1);
+    height: 700px;
+}
+
+@keyframes img {
+    25% {
+        box-shadow: 0 0 20px 0.4px #33fff9;
+
+    }
+
+    50% {
+        box-shadow: 0 0 20px 0.4px #46bcef;
+    }
+
+    75% {
+        box-shadow: 0 0 20px 0.4px #37f37c;
+    }
+
+    100% {
+        box-shadow: 0 0 20px 0.4px #c45ee0;
+    }
+}
+
+.table1 {
+    background: #000;
+
+}

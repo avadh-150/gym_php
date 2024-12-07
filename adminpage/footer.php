@@ -1,0 +1,1 @@
+<footer class="main">Copyright &copy; 2024 <strong> Gym System </strong></footer>

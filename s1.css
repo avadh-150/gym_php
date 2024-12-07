@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    background: #7878788f;
+
+}
+
+.welcome {
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    background: rgba(113, 99, 186, 255);
+    transition: all 0.6s ease-in-out;
+}
+
+/* .sidebar:hover{
+    width: 240px;
+} */
+
+.logo {
+    height: 80px;
+    padding: 16px;
+
+
+}
+
+.menu {
+    margin-top: 90px;
+    height: 88%;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: #e0e0e058;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+
+}
+.drop {
+    padding: 40px;
+}
+
+.d-con {
+    display: none;
+    position: absolute;
+    background: rgba(113, 99, 186, 255);
+    padding: 5px;
+    margin-top: 13px;
+    border-radius: 5px;
+}
+
+.d-con a {
+    text-align: left;
+    padding: 10px;
+    margin-top: -3px;
+}
+
+.d-con a:hover {
+    background: #e0e0e058;
+    border-radius: 3px;
+
+}
+
+.drop:hover .d-con {
+    display: block;
+}
+.logout {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/*  */
+.main-contect {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header i {
+    cursor: pointer;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 260px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    width: 1180px;
+    background: #fff;
+    padding: 10px 20px;
+    min-width: 100vh;
+
+
+}
+
+.title {
+    color: rgba(113, 99, 186, 255);
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 10;
+
+}
+
+.search-box {
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 12px;
+}
+
+.search-box input {
+    background: transparent;
+    padding: 10px;
+    border: none;
+
+}
+
+.search-box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/*  welcome*/
+
+.text {
+    margin: 10px 0 0 260px;
+    height:100px;
+    color: #fff;
+    border-radius: 12px;
+    background: rgba(113, 99, 186, 255);
+    
+}
+.text span{
+    font-size: 18px;
+    font-weight: 900;
+}
+.text h3{
+font-size: 30px;
+padding: 20px 0 0 10px;
+}
+.text p{
+    
+    margin: 5px 0 10px 30px;
+}
+
+/*        */
+.container {
+    height: 600px;
+    background: #ffffff;
+    margin: 10px 0 0 260px;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 12px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.member-card {
+    margin: 20px 0 0 0;
+    border-radius: 12px;
+    flex-direction: column;
+    background: #45c1a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 350px;
+    height: 160px;
+    transition: all .5s ease-in-out;
+}
+.member-card:hover{
+
+transform: translateY(-10px);
+}
+#orange{
+    background: #f4982f;
+}
+#blue{
+    background: #63a3df;
+}
+.card-box h4 {
+    padding: 8px;
+    float: left;
+    color: #fff;
+
+    font-size: 20px;
+}
+
+.card-box h6 {
+    margin-top: 20px;
+    color: #fff;
+
+    font-size: 20px;
+}
+
+.card-box span {
+    font-size: 40px;
+    margin: -10px 0 0 160px;
+}
+
+
+
+/* 
+
+*/
+.table1
+{
+    background: #ebe9e9;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.t-contect{
+    width:100% ;
+    padding: 3px;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #4e7d9c;
+    color: #e4e1e1;
+}
+th{
+    padding:10px;
+    text-align: left;
+    
+}
+
+td{
+    padding:10px;
+
+}
+.btn{
+    font-size: 15px;
+    padding: 4px;
+}
+#delete{
+    background: red;
+}
+#user{
+    color: #45c1a0;
+    font-size: 20px;
+}
+/* Registration   */
+
+
+
+/* footer */
+footer{
+    
+    margin: 30px 0 0 40px;
+}
+
+
+/* Payment code css */
+
+
+.pay-body
+{
+    background: url('js/danielle-cerullo-CQfNt66ttZM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+}
+.contain {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #9a9a9a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+.pic img{
+    height:150px;
+    border-radius: 4px;
+}
+
+/*New form*/
+.table1 a #btn {
+    float: right;
+    width: 150px;
+    height: 30px;
+    color: aliceblue;
+    margin-top: -25px;
+    font-size: 14px;
+    background: rgb(63, 61, 61);
+
+}
+
+.table1 a #btn span {
+    font-size: 18px;
+}
+#red{
+    background: red;
+}
